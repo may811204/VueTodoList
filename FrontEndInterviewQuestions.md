@@ -75,10 +75,10 @@ GET, POST, PUT, DELETE
 ### State Management Redux
 + Why Redux?
     1. 最上層的共同祖先要處理很多不同事物，程式邏輯發散
-    +. 更動UI時，移動component時要處理層層Callback的dataflow, 維護不易
-    +. States四散在不同的Component, 管理不易
-    +. 管理State與Rendering Logic結合，不合軟工分工角度
-    +. States Changes are implicit，因結合在Component裡，從何時開始跳轉與錯誤不易追蹤
+    + 更動UI時，移動component時要處理層層Callback的dataflow, 維護不易
+    + States四散在不同的Component, 管理不易
+    + 管理State與Rendering Logic結合，不合軟工分工角度
+    + States Changes are implicit，因結合在Component裡，從何時開始跳轉與錯誤不易追蹤
     + Code for 'States' not code for 'changes'，UI的顯示與現在的State有關，而非凌亂的寫querySelect('div').style..
     + Virtual DOM track changes automatically
     + UI = maps from states to visual looks – Each component is a function of partial states 紀錄State而非如何差異（如何跳轉）
